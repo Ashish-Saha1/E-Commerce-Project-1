@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project">
+    <title>Shopping Bag</title>
+
+    <!-- CSS file link here -->
+    <link rel="stylesheet" href="./style.css">
+
+     <!-- CSS file for Tablet link here -->
+     <link rel="stylesheet" href="./style-common-tablet.css" media="screen and (min-width:768px)">
+
+    <!-- CSS file for desktop link here -->
+    <link rel="stylesheet" href="./style-common-desktop.css" media="screen and (min-width: 992px)">
+
+   
+
+
+    <!-- Font awesome link below  For Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--Google fonts link   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Rampart+One&family=Roboto&display=swap" rel="stylesheet">
+
+
+<style>
+    /* Common Code Starts Here */
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+        text-decoration: none;
+        color: #222222;
+
+        /* font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Rampart One', cursive;
+        font-family: 'Roboto', sans-serif; */
+    }
+
+
+    html{
+        scroll-behavior: smooth;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body{
+      width: 100%;
+
+    }
+
+    :root{
+        --font-color: white;
+        --background-color: rgb(255, 190, 179);
+        --background-color-1: #F08080;
+        --box-shadow:0.1rem 0.2rem 0.8rem rgba(205,202,202,0.5);
+        --padding: 0.5rem;
+        --border-radius: 0.6rem;
+        --trasition: all .3s;
+        --border: 1px solid transparent;
+        --border-1: 1px solid coral;
+
+    }
+
+
+    /* Common Code Ends Here */
+
+  .span-color{
+    margin-bottom: 10px;
+  }
+
+  .dot-green{
+    background-color:lightgreen;
+    border-radius: 50%;
+    padding: 4px 14px;
+    margin-right: 5px;
+    }
+
+  .dot-black{
+    background-color:black;
+    border-radius: 50%;
+    padding: 4px 14px;
+    margin-right: 5px;
+    }
+
+  .dot-red{
+    background-color:red;
+    border-radius: 50%;
+    padding: 4px 14px;
+
+    }
+
+    .product-details button{
+        margin: 5px;
+    }
+
+
+
+
+
+@media screen and (min-width:768px){
+
+ .main-contant{
+    margin: 5% 0;
+ }
+
+  .product{
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+
+  }
+ 
+  .product-image{
+    flex: 1;
+    padding: 10px;
+  }
+
+  .product-details{
+    flex: 1;
+    padding: 10px;
+  }
+
+
+
+
+}
+
+
+@media screen and (min-width:992px){
+.product{
+    margin: 0 30px;
+
+  }
+ 
+
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+       
+</head>
+
+<body>
+
+
+                <!-- Nav Bar Starts -->
+<nav>
+       <div class="nav-container">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="website logo">
+        </div>
+
+        <div class="hide-manu" id="manu-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <ul>
+                <li><a href="login.html">Login / Register</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="profile.html"><img class="profile-image" src="images/ashish.jpg" alt="profile image"></a>
+                <li><a href=""><i class="fa-solid fa-search"></i></a></li>
+                
+            </ul>
+
+              <div class="manu-button">
+                <i class="fa-solid fa-bars fa-2x manu-icon" id="manu-icon" style="color: #8d8f9e; margin-right:10px;"></i>
+              </div>  
+        </div>
+
+       </div>
+
+
+</nav>
+
+                <!-- Nav Bar Ends -->
+
+
+                <!-- Main Starts -->
+
+<main class="main-contant">
+    
+    <div class="product">
+
+        <div class="product-image">
+            <img src="images/product-shoe.jpg" alt="Headphone image">
+        </div>
+
+        <div class="product-details">
+            <h3>Bata Scollar Shoes</h3>
+
+            <div class="span-color">
+                <span class="dot-green"></span>
+                <span class="dot-black"></span>
+                <span class="dot-red"></span>
+            </div>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptatum laudantium in iste dolorem suscipit, nulla, deserunt, eaque veniam rem cumque consectetur qui a rerum ad unde tempore id nesciunt. Corporis eos voluptatum voluptates facere distinctio! Sed architecto natus fuga veniam laboriosam reprehenderit animi esse sunt. Magni et vel sapiente.</p>
+
+            <h3>Category: Shoes</h3>
+            <h4>$225.99</h4>
+
+            <h5>Rating: 4.5/5</h5>
+
+            <button class="btn">Add To Cart</button>
+            
+            <button class="btn">Back To Shopping</button>
+        </div>
+    </div>
+
+
+
+</main>
+
+
+                <!-- Main Ends -->
+
+
+
+                <!-- Footer Starts -->
+<footer>
+    <div class="newsletter">
+        <label for="email">Subscribe to Newsletter :</label>
+        <input type="email" name="email" id="" placeholder="Your Email Addres">
+        <button class="button-style">Subscribe</button>
+    </div>
+
+    <div class="copyright">
+        <p>&copy; Copyright 2023 Shopping Bag. All rights rserved</p>
+    </div>
+
+  </footer>
+
+
+                <!-- Footer Ends -->
+
+
+
+                 
+   
+
+
+     
+
+
+
+
+
+
+<script src="Javascript/script.js"></script>
+</body>
+
+</html>
